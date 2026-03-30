@@ -1,2 +1,0 @@
-[console_scripts]
-simple-linux = simple_linux.main:main
