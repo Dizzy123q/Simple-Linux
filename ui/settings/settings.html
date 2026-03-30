@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <link rel="stylesheet" href="/shared/style.css">
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+
+    <div class="settings-container">
+
+        <div class="settings-header">
+            <button class="btn btn-back" id="backBtn">←</button>
+            <h1 class="page-title" style="font-size: 36px;">Settings</h1>
+        </div>
+
+        <!-- ─── DEEPL API KEY ─── -->
+        <div class="settings-section">
+            <p class="section-title">DeepL API Key</p>
+            <div class="input-row">
+                <input
+                    class="input"
+                    id="apiKeyInput"
+                    type="password"
+                    placeholder="Introdu cheia API DeepL..."
+                >
+                <button class="btn" id="toggleKeyBtn">Show</button>
+            </div>
+        </div>
+
+        <!-- ─── LIMBA ─── -->
+        <div class="settings-section">
+            <p class="section-title">Limba pentru traducere</p>
+            <div class="lang-list" id="langList"></div>
+        </div>
+
+        <!-- ─── SAVE ─── -->
+        <div class="settings-footer">
+            <button class="btn btn-primary" id="saveBtn">Salvează</button>
+            <span class="confirm-msg hidden" id="confirmMsg">✓ Salvat cu succes.</span>
+        </div>
+
+    </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>

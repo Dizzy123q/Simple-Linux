@@ -1,0 +1,44 @@
+body {
+    background-color: #0f0f0f;
+    background-image: radial-gradient(circle, #2a2a2a 1px, transparent 1px);
+    background-size: 28px 28px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 24px;
+    padding: 40px;
+}
+
+.main-input {
+    width: 560px;
+    height: 130px;
+}
+
+.main-btn {
+    width: 260px;
+    padding: 14px;
+    font-size: 15px;
+}
+
+.main-actions {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-back-icon {
+    padding: 10px 18px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    border-radius: var(--radius-lg);
+}
+.btn-back-icon:hover {
+    color: var(--text-primary);
+}

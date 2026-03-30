@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Services Dashboard</title>
+    <style>html, body { background-color: #0f0f0f; }</style>
+    <link rel="stylesheet" href="/shared/style.css">
+    <link rel="stylesheet" href="/services/services.css">
+</head>
+<body>
+    <div class="services-layout">
+
+        <!-- ─── STÂNGA ─── -->
+        <div class="left-panel">
+            <div class="left-header">
+                <button class="btn btn-back" id="backBtn">←</button>
+                <h1 class="page-title" style="font-size: 22px;">Services</h1>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-label">Total</span>
+                    <span class="stat-value total" id="statTotal">—</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Active</span>
+                    <span class="stat-value active" id="statActive">—</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Failed</span>
+                    <span class="stat-value failed" id="statFailed">—</span>
+                </div>
+            </div>
+
+            <input class="input" id="searchBar" type="text" placeholder="Caută servicii...">
+
+            <div class="services-list" id="servicesList">
+                <div class="spinner-wrap" id="spinnerWrap">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ─── DREAPTA ─── -->
+        <div class="right-panel">
+
+            <div class="empty-state" id="emptyState">
+                <h2>Services Dashboard</h2>
+                <p>Selectează un serviciu din stânga<br>pentru a vedea detalii.</p>
+            </div>
+
+            <div class="details hidden" id="detailsPanel">
+                <div class="details-header">
+                    <h2 class="details-title" id="detailsName"></h2>
+                    <span class="status-badge" id="detailsBadge"></span>
+                </div>
+
+                <div class="detail-block">
+                    <span class="detail-label">Descriere</span>
+                    <span class="detail-value" id="detailsDesc"></span>
+                </div>
+
+                <div class="detail-block">
+                    <span class="detail-label">PID</span>
+                    <span class="detail-value" id="detailsPid"></span>
+                </div>
+
+                <div class="detail-block">
+                    <span class="detail-label">Comenzi</span>
+                    <div class="commands" id="commandsList"></div>
+                </div>
+
+                <div class="detail-block hidden" id="manBlock">
+                    <span class="detail-label">Manual</span>
+                    <button class="man-btn" id="manBtn">Vezi manual</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/services/services.js"></script>
+</body>
+</html>

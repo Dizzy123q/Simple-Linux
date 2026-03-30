@@ -1,0 +1,96 @@
+body {
+    background-color: #0f0f0f;
+    background-image: radial-gradient(circle, #2a2a2a 1px, transparent 1px);
+    background-size: 28px 28px;
+}
+
+.settings-container {
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.settings-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.settings-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.input-row .input {
+    flex: 1;
+}
+
+/* ─── LANG LIST ─── */
+.lang-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.lang-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 18px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: background var(--transition), border-color var(--transition);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.lang-item:hover {
+    background: var(--bg-hover);
+    border-color: var(--border-hover);
+    color: var(--text-primary);
+}
+
+.lang-item.selected {
+    border-color: var(--border-hover);
+    color: var(--text-primary);
+    background: var(--bg-hover);
+}
+
+.lang-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--border);
+    flex-shrink: 0;
+    transition: background var(--transition);
+}
+
+.lang-item.selected .lang-dot {
+    background: var(--accent-green);
+}
+
+/* ─── FOOTER ─── */
+.settings-footer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.confirm-msg {
+    font-size: 14px;
+    color: var(--accent-green);
+    font-weight: 500;
+}

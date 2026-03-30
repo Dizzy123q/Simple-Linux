@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Man Page</title>
+    <link rel="stylesheet" href="/shared/style.css">
+    <link rel="stylesheet" href="man.css">
+</head>
+<body>
+
+    <!-- ─── HEADER ─── -->
+    <div class="man-header">
+        <button class="btn btn-back" id="backBtn">←</button>
+        <h2 class="man-title" id="manTitle"></h2>
+        <div style="flex: 1;"></div>
+        <button class="btn" id="translateBtn">Translate</button>
+    </div>
+
+    <!-- ─── CONȚINUT ─── -->
+    <div class="man-body">
+
+        <div class="man-content" id="manContent">
+            <div class="spinner-wrap" id="spinnerWrap">
+                <div class="spinner"></div>
+            </div>
+        </div>
+
+        <!-- ─── PANOU TRADUCERE ─── -->
+        <div class="translate-panel" id="translatePanel">
+            <p class="section-title">Traducere</p>
+            <div id="translationText" class="translation-text text-secondary">
+                Selectează text și apasă Translate.
+            </div>
+        </div>
+
+    </div>
+
+    <script src="man.js"></script>
+</body>
+</html>
