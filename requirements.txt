@@ -2,3 +2,4 @@ pywebview>=4.4.1
 PyQt6
 PyQt6-WebEngine
 psutil
+qtpy
