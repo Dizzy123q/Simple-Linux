@@ -1,0 +1,12 @@
+setup.py
+logic/__init__.py
+logic/config.py
+logic/man_parser.py
+logic/services_manager.py
+logic/translator.py
+simple_linux.egg-info/PKG-INFO
+simple_linux.egg-info/SOURCES.txt
+simple_linux.egg-info/dependency_links.txt
+simple_linux.egg-info/entry_points.txt
+simple_linux.egg-info/requires.txt
+simple_linux.egg-info/top_level.txt
