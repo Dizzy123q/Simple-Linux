@@ -18,7 +18,7 @@ def resource_path(relative: str) -> str:
 
 
 def main():
-    from api import Api
+    from simple_linux.api import Api
     from logic.config import load_config
 
     api = Api()
