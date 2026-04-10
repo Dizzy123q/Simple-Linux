@@ -1,6 +1,15 @@
+# Python
 __pycache__/
 *.pyc
+*.pyo
+
+# Build artifacts
 build/
 *.egg-info/
+
+# Config personal (contine API key)
+simple_linux/logic/config.json
+simple_linux/logic/config\ \(Copy\).json
+
+# Virtual environment
 venv/
-config (Copy).json

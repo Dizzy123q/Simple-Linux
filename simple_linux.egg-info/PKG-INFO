@@ -1,9 +1,0 @@
-Metadata-Version: 2.4
-Name: simple-linux
-Version: 1.0.0
-Requires-Python: >=3.10
-Requires-Dist: pywebview>=4.4.1
-Requires-Dist: PyQt6
-Requires-Dist: PyQt6-WebEngine
-Dynamic: requires-dist
-Dynamic: requires-python
