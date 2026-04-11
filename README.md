@@ -155,3 +155,7 @@ python simple_linux/main.py
 ### License
 
 MIT
+
+---
+
+*This project was built with the help of AI.*
